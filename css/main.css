@@ -1,0 +1,154 @@
+body{
+	background: rgb(237,238,240);
+}
+h1{
+	font-size: 32px;
+	font-weight: bold;
+}
+h2{
+	font-size: 24px;
+	font-weight: bold;
+}
+h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+header{
+	background: rgb(80,114,153);
+	padding:10px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+header img{
+	margin-left: 13%;
+}
+header a{
+	display: contents;
+}
+nav{
+	max-width: 200px;
+	float: left;
+	padding-top: 10px;
+}
+nav ul>li{
+	
+	
+}
+nav ul>li:hover{
+	background: rgb(225,229,235);
+}
+nav ul>li>a{
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: rgb(80 114 153);
+}
+section article p::selection{
+	background: rgb(224,228,234);
+	color: rgb(0,128,0);
+}
+section{
+	margin-left: 215px;
+	max-width: 460px;
+	padding-top: 15px;
+}
+section article{
+	background: rgb(255,255,255);
+	border-radius: 10px;
+	border: 1px solid rgb(216,217,219);
+	text-align: justify;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+.articleHeader{
+	padding: 10px 20px 10px 20px;
+	border-bottom: 5px solid rgb(208,208,208);
+}
+.articleContent{
+	padding: 10px 20px 0 20px;
+}
+.articleContent p{
+	padding-bottom: 10px;
+	border-bottom: 3px solid rgb(208,208,208);
+}
+.articleContent img{
+	width: 100%;
+}
+.articleContent ul{
+	text-align:end;
+	padding: 10px 0 20px 0;
+}
+.articleContent ul>li:first-child{
+	float:left;
+}
+.articleContent ul>li>a{
+	color: rgb(80 114 153);
+	text-decoration: none;
+}
+
+#wrapper-content{
+	margin: 0 auto;
+	max-width: 820px;
+	margin-top: 50px;
+}
+aside{
+	position: fixed;
+	width: 160px;
+	top: 65px;
+    
+}
+
+.rightInfo{
+	background: rgb(255,255,255);
+	border-radius: 10px;
+	border: 1px solid rgb(216,217,219);
+	padding: 25px 10px 10px 10px;
+	margin-bottom: 20px;
+}
+.rightInfo p{
+	background: rgb(237,238,240);
+	margin-bottom: 15px;
+}
+.rightInfoHeader{
+	margin-bottom: 20px;
+} 
+footer{
+	text-align: center;
+	color: rgb(128,128,128);
+	background: rgb(255,255,255);
+}
+@media (max-width: 1100px){
+	aside{
+		display: none;
+	}
+	#wrapper-content{
+		max-width: 980px;
+	}
+	section{
+		max-width: 620px;
+	}
+}
+@media (max-width: 860px){
+	nav{
+		float: none;
+		max-width: 100%;
+	}
+
+	nav ul{
+		text-align: center;
+	}
+
+	nav ul>li{
+		display: inline-block;
+	}
+	#wrapper-content{
+		max-width: 90%;
+	}
+	section{
+		clear: both;
+		max-width: 100%;
+		margin-left: 0;
+		
+	}
+}
